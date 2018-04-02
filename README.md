@@ -1,4 +1,5 @@
 # Withers Derive
+[![Latest Version](https://img.shields.io/crates/v/withers_derive.svg)](https://crates.io/crates/withers_derive)
 
 A macro to implement wither methods for properties of a struct.
 
