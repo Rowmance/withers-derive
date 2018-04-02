@@ -33,7 +33,7 @@ _However:_
 - The wither pattern requires a struct to be able to be initialised with default and sensible values. Otherwise an error which could be caught on initialisation could cause unexpected behaviour down the line.
 - A builder can usually be stored and used to generate several instances of structs, whereas withers operate on instances directly.
 
-If these feel like they may be issues for you, the[derive_builder](https://docs.rs/derive_builder)crate may suit your needs better.
+If these feel like they may be issues for you, the [derive_builder](https://docs.rs/derive_builder) crate may suit your needs better.
 
 ## What it does
 The following code
