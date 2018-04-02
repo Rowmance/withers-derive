@@ -38,7 +38,8 @@ fn impl_withers(ast: &DeriveInput, fields: &Fields) -> Tokens {
 
             let withers = idents.iter().map(|&(ref with_name, ref name, ref ty)| {
                 quote! {
-                    fn #with_name(mut self, value: #ty) -> Self {
+                    /// Sets the #name property.
+                    pub fn #with_name(mut self, value: #ty) -> Self {
                         self.#name = value;
                         self
                     }

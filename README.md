@@ -69,6 +69,13 @@ impl Foo {
 ```
 
 ## Quick Start
+- Add the `wither_derive` dependency to your `Cargo.toml` file.
+- Import the crate and macro with 
+```rust
+#[macro_use]
+extern crate withers_derive;
+```
+- Annotate structs with `#[derive(Withers)]`.
 
 ## License
 [MIT License](LICENSE)
