@@ -1,7 +1,12 @@
 [package]
 name = "withers_derive"
 version = "0.1.0"
+description = "A macro to implement wither methods for properties of a struct."
 authors = ["Roman Kolacz <roman@kolacz.io>"]
+license = "MIT"
+repository = "https://github.com/Rowmance/withers-derive"
+readme = "README.md"
+keywords = ["withers", "derive", "pattern", "with"]
 
 [lib]
 name = "withers_derive"
