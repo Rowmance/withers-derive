@@ -13,7 +13,9 @@ struct Bar(u32, bool);
 
 #[test]
 fn internal() {
-    let foo = Foo::default().with_foo(234).with_bar(Bar(12, false));
+    let foo = Foo::default()
+        .with_foo(234)
+        .with_bar(Bar(12, false));
 
     assert_eq!(
         foo,
@@ -23,4 +25,14 @@ fn internal() {
             baz: None
         }
     );
+
+    let bar = foo.with_baz(Some(true));
+    assert_eq!(
+        bar,
+        Foo {
+            foo: 234,
+            bar: Bar(12, false),
+            baz: Some(true)
+        }
+    )
 }
